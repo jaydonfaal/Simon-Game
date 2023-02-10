@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+
+body{
+  background-color: #22242A;
+}
+
+.name-contain{
+
+  position: relative;
+  display: flex;
+  padding-left: 5vh;
+}
+
+h1{
+  font-size: 15vh;
+  font-family: 'Zeyada', sans-serif;
+  color: black;
+  text-shadow:
+  0 0 12px orange,
+  0 0 22px orange,
+  0 0 30px red;r
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 3vh;
+  font-family: 'Zeyada';
+  color: #FFFF33;
+  margin: 0;
+}
+
+h3{
+  text-align: center;
+  padding-bottom: 3vh;
+  margin: 0;
+  font-family: 'Zeyada';
+  color: #FFFF33;
+}
+
+h4{
+  text-align: center;
+  padding-bottom: 3vh;
+  font-family: 'Zeyada';
+  color: #FFFF33;
+  margin: 0;
+  font-size: 5vh;
+}
+
+.game-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 95vw;
+
+}
+
+.game{
+  height: 50vh;
+  width: 50vh;
+  display: inline-block;
+}
+
+
+
+.bottom-right{
+    width: 25vh;
+    height: 25vh;
+    background: #FF3131;
+    border-radius: 0 0 25vh 0;
+    -moz-border-radius: 0 0 25vh 0;
+    -webkit-border-radius: 0 0 25vh 0;
+    border: none;
+}
+
+.bottom-left{
+  float: left;
+     width: 25vh;
+     height: 25vh;
+     background: #15f4ee;
+     border-radius: 0 0 0 25vh;
+     -moz-border-radius: 0 0 0 25vh;
+     -webkit-border-radius: 0 0 0 25vh;
+     border: none;
+}
+
+
+.top-right{
+  float: right;
+         width: 25vh;
+         height: 25vh;
+         background: #39FF14;
+         border-radius: 0 25vh 0 0;
+         -moz-border-radius: 0 25vh 0 0;
+         -webkit-border-radius: 0 25vh 0 0;
+         border: none;
+}
+
+
+.top-left{
+         width: 25vh;
+         height: 25vh;
+         color: #FFFF33;
+         background: #FFFF33;
+         border-radius: 25vh 0 0 0;
+         -moz-border-radius: 25vh 0 0 0;
+         -webkit-border-radius: 25vh 0 0 0;
+         border: none;
+    }
+
+.clicked{
+
+  background-color:   white;
+}
