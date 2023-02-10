@@ -5,6 +5,25 @@ body{
   background-color: #22242A;
 }
 
+.direc{
+  position: relative;
+  width: 15vw;
+left: 7.5vw;
+top: 40vh;
+}
+
+.gameOver{
+  left: 70vw;
+  top: 40vh;
+  position: absolute;
+}
+
+.header{
+  width: 100vw;
+  position: absolute;
+  display: flex;
+}
+
 .name-contain{
 
   position: relative;
@@ -21,18 +40,22 @@ body{
 
 h1{
   font-size: 15vh;
-  font-family: 'Zeyada', sans-serif;
-  color: black;
+  font-family: 'Neonderthaw', sans-serif;
+  color: gray;
   text-shadow:
-  0 0 12px orange,
-  0 0 22px orange,
-  0 0 30px red;
+  0 0 12px white,
+  0 0 22px purple,
+  0 0 30px white;
+}
+
+.effect{
+  animation: slidein 2s ease-in;
 }
 
 h2{
   text-align: center;
   padding-bottom: 3vh;
-  font-family: 'Zeyada';
+  font-family: 'Neonderthaw';
   color: #FFFF33;
   margin: 0;
 }
@@ -41,7 +64,7 @@ h3{
   text-align: center;
   padding-bottom: 3vh;
   margin: 0;
-  font-family: 'Zeyada';
+  font-family: 'Neonderthaw';
   color: #FFFF33;
 }
 
@@ -55,6 +78,7 @@ h4{
 }
 
 .game-container{
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +92,6 @@ h4{
   width: 50vh;
   display: inline-block;
 }
-
 
 
 .bottom-right{
@@ -118,4 +141,14 @@ h4{
 
 .clicked{
   background-color:   white;
+}
+
+@keyframes  slidein{
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }

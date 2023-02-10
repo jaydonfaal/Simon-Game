@@ -2,11 +2,15 @@ const yellow = document.getElementById('yellow');
 const green = document.getElementById('green');
 const blue = document.getElementById('blue');
 const red = document.getElementById('red');
-const id = document.getElementById('level');
+const level = document.getElementById('level');
 const dir = document.getElementById('directions');
+const game_over = document.getElementById('gameOver');
+const header = document.getElementById('header');
+const title = document.getElementById('title');
+const letters = ["S", "I", "M", "O", "N"];
 const timer = ms => new Promise(res => setTimeout(res, ms));
 dir.textContent = ("Press Enter Key To Start");
-id.textContent = "0";
+level.textContent = "0";
 
 let gameInAction = false;
 let userCanPlay = false;
@@ -15,6 +19,23 @@ let colors = [yellow, red, blue, green];
 let userInput = [];
 let count = 0;
 let userCount = 0;
+
+addTitle();
+async function addTitle(){
+  for (let i = 0; i < 5; i++) {
+    await timer(1000)
+      const letterElement = document.createElement('h1')
+      letterElement.classList.add('effect');
+      letterElement.textContent = letters[i];
+      header.append(letterElement);
+  }
+
+}
+
+
+
+
+
 
 
 
@@ -109,6 +130,8 @@ function gameOver(){
   pattern = [];
   userInput = [];
   count = [];
+  level.textContent = 0;
+  game_over.textContent = ("GAME OVER");
   dir.textContent = ("Press Enter Key To Start");
 }
 
@@ -119,7 +142,7 @@ function checkInput(input){
   userCount++;
   if (pattern.length == userCount) {
 
-    id.textContent = userCount;
+    level.textContent = userCount;
     userCount = 0;
     userCanPlay = false;
     setTimeout(() =>{getRandomInt();}, 1000)
