@@ -12,6 +12,7 @@ const timer = ms => new Promise(res => setTimeout(res, ms));
 dir.textContent = ("Press Enter Key To Start");
 level.textContent = "0";
 
+
 let gameInAction = false;
 let userCanPlay = false;
 let pattern = [];
@@ -20,16 +21,17 @@ let userInput = [];
 let count = 0;
 let userCount = 0;
 
+
+
 addTitle();
 async function addTitle(){
   for (let i = 0; i < 5; i++) {
-    await timer(1000)
+    await timer(800)
       const letterElement = document.createElement('h1')
       letterElement.classList.add('effect');
       letterElement.textContent = letters[i];
       header.append(letterElement);
   }
-
 }
 
 
@@ -42,6 +44,7 @@ async function addTitle(){
 (document).addEventListener('keyup', e => {
   if (event.keyCode === 13) {
     if(gameInAction == false){
+      game_over.textContent = "";
       setTimeout(() => {
         getRandomInt();
       },1000);
@@ -96,7 +99,7 @@ function getRandomInt() {
 
 async function displayPattern(){
   for(let i = 0; i < pattern.length; i++){
-    await timer(1000);
+    await timer(800);
     switch (pattern[i]){
     case 0:
     yellow.classList.add('glow');

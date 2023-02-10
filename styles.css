@@ -12,6 +12,8 @@ left: 7.5vw;
 top: 40vh;
 }
 
+
+
 .gameOver{
   left: 70vw;
   top: 40vh;
@@ -19,7 +21,7 @@ top: 40vh;
 }
 
 .header{
-  width: 100vw;
+
   position: absolute;
   display: flex;
 }
@@ -35,7 +37,8 @@ top: 40vh;
   box-shadow:
   0 0 2px white,
   0 0 12px white,
-  0 0 25px white;
+  0 0 25px white,
+  0 0 60px white;
 }
 
 h1{
@@ -49,7 +52,7 @@ h1{
 }
 
 .effect{
-  animation: slidein 2s ease-in;
+  animation: slidein 1s ease-in;
 }
 
 h2{
@@ -145,10 +148,10 @@ h4{
 
 @keyframes  slidein{
   0% {
-    transform: translateX(100%);
+    font-size: 40vh;
   }
 
   100% {
-    transform: translateX(0%);
+    font-size: 15vh;
   }
 }
