@@ -48,6 +48,7 @@ async function addTitle(){
 
 function getRandomInt() {
     pattern.push(Math.floor(Math.random() * 4));
+  userCanPlay = false;
     displayPattern();
 }
 
